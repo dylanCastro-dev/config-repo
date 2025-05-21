@@ -4,7 +4,7 @@ spring:
       uri: mongodb://localhost:27017/transactiondb
 
 server:
-  port: 8080
+  port: 8082
 
 logging:
   level:
