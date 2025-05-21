@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: transaction-service
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/transactiondb
+
+  config:
+    import: "configserver:http://localhost:8888"
+
+server:
+  port: 8082
+
+logging:
+  level:
+    root: INFO
