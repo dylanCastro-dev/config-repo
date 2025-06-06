@@ -11,8 +11,11 @@ logging:
     root: DEBUG
 
 springdoc:
-  swagger-ui:
-    path: /swagger-ui.html
-    operationsSorter: method
   api-docs:
     enabled: true
+    path: /v3/api-docs
+    resolve-schema-properties: true
+    swagger-ui:
+      path: /swagger-ui.html
+  swagger-ui:
+    url: /openapi/customer-service-openapi.yaml
