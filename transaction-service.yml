@@ -29,7 +29,7 @@ management:
 resilience4j:
   circuitbreaker:
     instances:
-      myService:
+      productService:
         registerHealthIndicator: true
         slidingWindowSize: 5
         failureRateThreshold: 50
@@ -40,5 +40,5 @@ resilience4j:
 
   timelimiter:
     instances:
-      myService:
+      productService:
         timeoutDuration: 2s
